@@ -1,0 +1,1237 @@
+sensor:
+  - platform: uptime
+    name: Uptime Sensor
+
+  - platform: template
+    name: "BHZ3 Volumenstrom Solar"
+    id: "BHZ3_Volumenstrom_Solar"
+    state_class: measurement
+    unit_of_measurement: "l/min"
+    lambda: |-
+        return id(BHZ3_Volumenstrom_Solar).state;
+    update_interval: 10s
+  - platform: template
+    name: "BHZ3 Volumenstrom WW"
+    id: "BHZ3_Volumenstrom_WW"
+    state_class: measurement
+    unit_of_measurement: "l/min"
+    lambda: |-
+        return id(BHZ3_Volumenstrom_WW).state;
+    update_interval: 10s
+  - platform: template
+    name: "BHZ3 Volumenstrom Festbrennofen"
+    id: "BHZ3_Volumenstrom_Festbrennofen"
+    state_class: measurement
+    unit_of_measurement: "l/min"
+    lambda: |-
+        return id(BHZ3_Volumenstrom_Festbrennofen).state;
+    update_interval: 10s
+  - platform: template
+    name: "BHZ3 Volumenstrom Zusatzheizung"
+    id: "BHZ3_Volumenstrom_Zusatzheizung"
+    state_class: measurement
+    unit_of_measurement: "l/min"
+    lambda: |-
+        return id(BHZ3_Volumenstrom_Zusatzheizung).state;
+    update_interval: 10s
+  - platform: template
+    name: "BHZ3 Druck Puffer"
+    id: "BHZ3_Druck_Puffer"
+    state_class: measurement
+    unit_of_measurement: "bar"
+    lambda: |-
+        return id(BHZ3_Druck_Puffer).state;
+    update_interval: 10s
+    device_class: PRESSURE
+  - platform: template
+    name: "BHZ3 Volumenstrom HK1"
+    id: "BHZ3_Volumenstrom_HK1"
+    state_class: measurement
+    unit_of_measurement: "l/min"
+    lambda: |-
+        return id(BHZ3_Volumenstrom_HK1).state;
+    update_interval: 10s
+  - platform: template
+    name: "BHZ3 Volumenstrom HK2"
+    id: "BHZ3_Volumenstrom_HK2"
+    state_class: measurement
+    unit_of_measurement: "l/min"
+    lambda: |-
+        return id(BHZ3_Volumenstrom_HK2).state;
+    update_interval: 10s
+  - platform: template
+    name: "BHZ3 Temperatur HK1 VL"
+    id: "BHZ3_Temperatur_HK1_VL"
+    state_class: measurement
+    unit_of_measurement: "°C"
+    lambda: |-
+        return id(BHZ3_Temperatur_HK1_VL).state;
+    update_interval: 10s
+    device_class: TEMPERATURE
+  - platform: template
+    name: "BHZ3 Temperatur HK2 VL"
+    id: "BHZ3_Temperatur_HK2_VL"
+    state_class: measurement
+    unit_of_measurement: "°C"
+    lambda: |-
+        return id(BHZ3_Temperatur_HK2_VL).state;
+    update_interval: 10s
+    device_class: TEMPERATURE
+  - platform: template
+    name: "BHZ3 Temperatur Puffer Oben"
+    id: "BHZ3_Temperatur_Puffer_Oben"
+    state_class: measurement
+    unit_of_measurement: "°C"
+    lambda: |-
+        return id(BHZ3_Temperatur_Puffer_Oben).state;
+    update_interval: 10s
+    device_class: TEMPERATURE
+  - platform: template
+    name: "BHZ3 Temperatur Puffer Mitte"
+    id: "BHZ3_Temperatur_Puffer_Mitte"
+    state_class: measurement
+    unit_of_measurement: "°C"
+    lambda: |-
+        return id(BHZ3_Temperatur_Puffer_Mitte).state;
+    update_interval: 10s
+    device_class: TEMPERATURE
+  - platform: template
+    name: "BHZ3 Temperatur Puffer Unten"
+    id: "BHZ3_Temperatur_Puffer_Unten"
+    state_class: measurement
+    unit_of_measurement: "°C"
+    lambda: |-
+        return id(BHZ3_Temperatur_Puffer_Unten).state;
+    update_interval: 10s
+    device_class: TEMPERATURE
+  - platform: template
+    name: "BHZ3 Temperatur WW Zirkulation"
+    id: "BHZ3_Temperatur_WW_Zirkulation"
+    state_class: measurement
+    unit_of_measurement: "°C"
+    lambda: |-
+        return id(BHZ3_Temperatur_WW_Zirkulation).state;
+    update_interval: 10s
+    device_class: TEMPERATURE
+  - platform: template
+    name: "BHZ3 Temperatur Wetter"
+    id: "BHZ3_Temperatur_Wetter"
+    state_class: measurement
+    unit_of_measurement: "°C"
+    lambda: |-
+        return id(BHZ3_Temperatur_Wetter).state;
+    update_interval: 10s
+    device_class: TEMPERATURE
+  - platform: template
+    name: "BHZ3 Temperatur Zusatzheizung VL"
+    id: "BHZ3_Temperatur_Zusatzheizung_VL"
+    state_class: measurement
+    unit_of_measurement: "°C"
+    lambda: |-
+        return id(BHZ3_Temperatur_Zusatzheizung_VL).state;
+    update_interval: 10s
+    device_class: TEMPERATURE
+  - platform: template
+    name: "BHZ3 Temperatur Zusatzheizung RL"
+    id: "BHZ3_Temperatur_Zusatzheizung_RL"
+    state_class: measurement
+    unit_of_measurement: "°C"
+    lambda: |-
+        return id(BHZ3_Temperatur_Zusatzheizung_RL).state;
+    update_interval: 10s
+    device_class: TEMPERATURE
+  - platform: template
+    name: "BHZ3 Temperatur HK1 RL"
+    id: "BHZ3_Temperatur_HK1_RL"
+    state_class: measurement
+    unit_of_measurement: "°C"
+    lambda: |-
+        return id(BHZ3_Temperatur_HK1_RL).state;
+    update_interval: 10s
+    device_class: TEMPERATURE
+  - platform: template
+    name: "BHZ3 Temperatur HK2 RL"
+    id: "BHZ3_Temperatur_HK2_RL"
+    state_class: measurement
+    unit_of_measurement: "°C"
+    lambda: |-
+        return id(BHZ3_Temperatur_HK2_RL).state;
+    update_interval: 10s
+    device_class: TEMPERATURE
+  - platform: template
+    name: "BHZ3 Temperatur WW Prim VL"
+    id: "BHZ3_Temperatur_WW_Prim_VL"
+    state_class: measurement
+    unit_of_measurement: "°C"
+    lambda: |-
+        return id(BHZ3_Temperatur_WW_Prim_VL).state;
+    update_interval: 10s
+    device_class: TEMPERATURE
+  - platform: template
+    name: "BHZ3 Temperatur WW Prim RL"
+    id: "BHZ3_Temperatur_WW_Prim_RL"
+    state_class: measurement
+    unit_of_measurement: "°C"
+    lambda: |-
+        return id(BHZ3_Temperatur_WW_Prim_RL).state;
+    update_interval: 10s
+    device_class: TEMPERATURE
+  - platform: template
+    name: "BHZ3 Temperatur WW Ist"
+    id: "BHZ3_Temperatur_WW_Ist"
+    state_class: measurement
+    unit_of_measurement: "°C"
+    lambda: |-
+        return id(BHZ3_Temperatur_WW_Ist).state;
+    update_interval: 10s
+    device_class: TEMPERATURE
+  - platform: template
+    name: "BHZ3 Pumpe WW"
+    id: "BHZ3_Pumpe_WW"
+    state_class: measurement
+    unit_of_measurement: ""
+    lambda: |-
+        return id(BHZ3_Pumpe_WW).state;
+    update_interval: 10s
+  - platform: template
+    name: "BHZ3 Status HK1 Ein Aus"
+    id: "BHZ3_Status_HK1_Ein_Aus"
+    state_class: measurement
+    unit_of_measurement: ""
+    lambda: |-
+        return id(BHZ3_Status_HK1_Ein_Aus).state;
+    update_interval: 10s
+  - platform: template
+    name: "BHZ3 Status HK1 Aus Ein"
+    id: "BHZ3_Status_HK1_Aus_Ein"
+    state_class: measurement
+    unit_of_measurement: ""
+    lambda: |-
+        return id(BHZ3_Status_HK1_Aus_Ein).state;
+    update_interval: 10s
+  - platform: template
+    name: "BHZ3 Status Zusatzheizung aktiv"
+    id: "BHZ3_Status_Zusatzheizung_aktiv"
+    state_class: measurement
+    unit_of_measurement: ""
+    lambda: |-
+        return id(BHZ3_Status_Zusatzheizung_aktiv).state;
+    update_interval: 10s
+  - platform: template
+    name: "BHZ3 Status Zusatzheizung Aktiviert fuer"
+    id: "BHZ3_Status_Zusatzheizung_Aktiviert_fuer"
+    state_class: measurement
+    unit_of_measurement: ""
+    lambda: |-
+        return id(BHZ3_Status_Zusatzheizung_Aktiviert_fuer).state;
+    update_interval: 10s
+  - platform: template
+    name: "BHZ3 Status Zusatzheizung Ein Aus"
+    id: "BHZ3_Status_Zusatzheizung_Ein_Aus"
+    state_class: measurement
+    unit_of_measurement: ""
+    lambda: |-
+        return id(BHZ3_Status_Zusatzheizung_Ein_Aus).state;
+    update_interval: 10s
+  - platform: template
+    name: "BHZ3 Status WW Zirkulationsprogramm"
+    id: "BHZ3_Status_WW_Zirkulationsprogramm"
+    state_class: measurement
+    unit_of_measurement: ""
+    lambda: |-
+        return id(BHZ3_Status_WW_Zirkulationsprogramm).state;
+    update_interval: 10s
+  - platform: template
+    name: "BHZ3 Temperatur WW Soll"
+    id: "BHZ3_Temperatur_WW_Soll"
+    state_class: measurement
+    unit_of_measurement: "°C"
+    lambda: |-
+        return id(BHZ3_Temperatur_WW_Soll).state;
+    update_interval: 10s
+    device_class: TEMPERATURE
+  - platform: template
+    name: "BHZ3 Volumenstrom WW-Speicher"
+    id: "BHZ3_Volumenstrom_WW_Speicher"
+    state_class: measurement
+    unit_of_measurement: "l/min"
+    lambda: |-
+        return id(BHZ3_Volumenstrom_WW_Speicher).state;
+    update_interval: 10s
+  - platform: template
+    name: "BHZ3 Status HK1 Absenkart"
+    id: "BHZ3_Status_HK1_Absenkart"
+    state_class: measurement
+    unit_of_measurement: ""
+    lambda: |-
+        return id(BHZ3_Status_HK1_Absenkart).state;
+    update_interval: 10s
+  - platform: template
+    name: "BHZ3 Status HK1 Sommerbetrieb"
+    id: "BHZ3_Status_HK1_Sommerbetrieb"
+    state_class: measurement
+    unit_of_measurement: "°C"
+    lambda: |-
+        return id(BHZ3_Status_HK1_Sommerbetrieb).state;
+    update_interval: 10s
+    device_class: TEMPERATURE
+  - platform: template
+    name: "BHZ3 Status HK1 Dauerbetrieb"
+    id: "BHZ3_Status_HK1_Dauerbetrieb"
+    state_class: measurement
+    unit_of_measurement: "h"
+    lambda: |-
+        return id(BHZ3_Status_HK1_Dauerbetrieb).state;
+    update_interval: 10s
+    device_class: DURATION
+  - platform: template
+    name: "BHZ3 Status HK1 Abwesenheitszeit"
+    id: "BHZ3_Status_HK1_Abwesenheitszeit"
+    state_class: measurement
+    unit_of_measurement: "d"
+    lambda: |-
+        return id(BHZ3_Status_HK1_Abwesenheitszeit).state;
+    update_interval: 10s
+    device_class: DURATION
+  - platform: template
+    name: "BHZ3 Status HK1 Programm"
+    id: "BHZ3_Status_HK1_Programm"
+    state_class: measurement
+    unit_of_measurement: ""
+    lambda: |-
+        return id(BHZ3_Status_HK1_Programm).state;
+    update_interval: 10s
+  - platform: template
+    name: "BHZ3 Status HK1 Waermer Kaelter"
+    id: "BHZ3_Status_HK1_Waermer_Kaelter"
+    state_class: measurement
+    unit_of_measurement: "°C"
+    lambda: |-
+        return id(BHZ3_Status_HK1_Waermer_Kaelter).state;
+    update_interval: 10s
+    device_class: TEMPERATURE
+  - platform: template
+    name: "BHZ3 Leistung Zusatzheizung"
+    id: "BHZ3_Leistung_Zusatzheizung"
+    state_class: measurement
+    unit_of_measurement: "W"
+    lambda: |-
+        return id(BHZ3_Leistung_Zusatzheizung).state;
+    update_interval: 10s
+    device_class: POWER
+  - platform: template
+    name: "BHZ3 Gesamtleistung Zusatzheizung Heute"
+    id: "BHZ3_Gesamtleistung_Zusatzheizung_Heute"
+    state_class: total_increasing
+    unit_of_measurement: "kWh"
+    lambda: |-
+        return id(BHZ3_Gesamtleistung_Zusatzheizung_Heute).state;
+    update_interval: 10s
+    device_class: ENERGY
+  - platform: template
+    name: "BHZ3 Gesamtleistung Zusatzheizung Gestern"
+    id: "BHZ3_Gesamtleistung_Zusatzheizung_Gestern"
+    state_class: total_increasing
+    unit_of_measurement: "kWh"
+    lambda: |-
+        return id(BHZ3_Gesamtleistung_Zusatzheizung_Gestern).state;
+    update_interval: 10s
+    device_class: ENERGY
+  - platform: template
+    name: "BHZ3 Gesamtleistung Zusatzheizung 5 Tage ohne Heute"
+    id: "BHZ3_Gesamtleistung_Zusatzheizung_5_Tage_ohne_Heute"
+    state_class: total_increasing
+    unit_of_measurement: "kWh"
+    lambda: |-
+        return id(BHZ3_Gesamtleistung_Zusatzheizung_5_Tage_ohne_Heute).state;
+    update_interval: 10s
+    device_class: ENERGY
+  - platform: template
+    name: "BHZ3 Gesamtleistung Zusatzheizung Letzte 4 Wochen ohne Heute"
+    id: "BHZ3_Gesamtleistung_Zusatzheizung_Letzte_4_Wochen_ohne_Heute"
+    state_class: total_increasing
+    unit_of_measurement: "kWh"
+    lambda: |-
+        return id(BHZ3_Gesamtleistung_Zusatzheizung_Letzte_4_Wochen_ohne_Heute).state;
+    update_interval: 10s
+    device_class: ENERGY
+  - platform: template
+    name: "BHZ3 Leistung HK1"
+    id: "BHZ3_Leistung_HK1"
+    state_class: measurement
+    unit_of_measurement: "W"
+    lambda: |-
+        return id(BHZ3_Leistung_HK1).state;
+    update_interval: 10s
+    device_class: POWER
+  - platform: template
+    name: "BHZ3 Gesamtleistung HK1 Heute"
+    id: "BHZ3_Gesamtleistung_HK1_Heute"
+    state_class: total_increasing
+    unit_of_measurement: "kWh"
+    lambda: |-
+        return id(BHZ3_Gesamtleistung_HK1_Heute).state;
+    update_interval: 10s
+    device_class: ENERGY
+  - platform: template
+    name: "BHZ3 Gesamtleistung HK1 Gestern"
+    id: "BHZ3_Gesamtleistung_HK1_Gestern"
+    state_class: total_increasing
+    unit_of_measurement: "kWh"
+    lambda: |-
+        return id(BHZ3_Gesamtleistung_HK1_Gestern).state;
+    update_interval: 10s
+    device_class: ENERGY
+  - platform: template
+    name: "BHZ3 Gesamtleistung HK1 5 Tage ohne Heute"
+    id: "BHZ3_Gesamtleistung_HK1_5_Tage_ohne_Heute"
+    state_class: total_increasing
+    unit_of_measurement: "kWh"
+    lambda: |-
+        return id(BHZ3_Gesamtleistung_HK1_5_Tage_ohne_Heute).state;
+    update_interval: 10s
+    device_class: ENERGY
+  - platform: template
+    name: "BHZ3 Gesamtleistung HK1 Letzte 4 Wochen ohne Heute"
+    id: "BHZ3_Gesamtleistung_HK1_Letzte_4_Wochen_ohne_Heute"
+    state_class: total_increasing
+    unit_of_measurement: "kWh"
+    lambda: |-
+        return id(BHZ3_Gesamtleistung_HK1_Letzte_4_Wochen_ohne_Heute).state;
+    update_interval: 10s
+    device_class: ENERGY
+  - platform: template
+    name: "BHZ3 Leistung WW"
+    id: "BHZ3_Leistung_WW"
+    state_class: measurement
+    unit_of_measurement: "W"
+    lambda: |-
+        return id(BHZ3_Leistung_WW).state;
+    update_interval: 10s
+    device_class: POWER
+  - platform: template
+    name: "BHZ3 Gesamtleistung WW Heute"
+    id: "BHZ3_Gesamtleistung_WW_Heute"
+    state_class: total_increasing
+    unit_of_measurement: "kWh"
+    lambda: |-
+        return id(BHZ3_Gesamtleistung_WW_Heute).state;
+    update_interval: 10s
+    device_class: ENERGY
+  - platform: template
+    name: "BHZ3 Gesamtleistung WW Gestern"
+    id: "BHZ3_Gesamtleistung_WW_Gestern"
+    state_class: total_increasing
+    unit_of_measurement: "kWh"
+    lambda: |-
+        return id(BHZ3_Gesamtleistung_WW_Gestern).state;
+    update_interval: 10s
+    device_class: ENERGY
+  - platform: template
+    name: "BHZ3 Gesamtleistung WW 5 Tage ohne Heute"
+    id: "BHZ3_Gesamtleistung_WW_5_Tage_ohne_Heute"
+    state_class: total_increasing
+    unit_of_measurement: "kWh"
+    lambda: |-
+        return id(BHZ3_Gesamtleistung_WW_5_Tage_ohne_Heute).state;
+    update_interval: 10s
+    device_class: ENERGY
+  - platform: template
+    name: "BHZ3 Gesamtleistung WW Letzte 4 Wochen ohne Heute"
+    id: "BHZ3_Gesamtleistung_WW_Letzte_4_Wochen_ohne_Heute"
+    state_class: total_increasing
+    unit_of_measurement: "kWh"
+    lambda: |-
+        return id(BHZ3_Gesamtleistung_WW_Letzte_4_Wochen_ohne_Heute).state;
+    update_interval: 10s
+    device_class: ENERGY
+canbus:
+  - platform: esp32_can
+    tx_pin: GPIO5
+    rx_pin: GPIO17
+    can_id: 4
+    bit_rate: 125kbps
+    on_frame:
+    - can_id: 0x0
+      can_id_mask: 0x0
+      use_extended_id: true
+      then:
+      - lambda: |-
+           if(x.size() > 3) {
+             switch(can_id) {
+                 case 0x1c104000: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 0.1;
+                     id(BHZ3_Volumenstrom_Solar).state = v;
+
+                     break;
+                 }
+                 case 0x1c104001: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 0.1;
+                     id(BHZ3_Volumenstrom_WW).state = v;
+                   if(v > 1.0 && id(BHZ3_Temperatur_WW_Zirkulation).state < 38.0) {
+                    id(sw_zirkulation).state = true;
+                    id(sw_zirkulation).publish_state(true);
+                   }
+                     break;
+                 }
+                 case 0x1c104003: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 0.1;
+                     id(BHZ3_Volumenstrom_Festbrennofen).state = v;
+
+                     break;
+                 }
+                 case 0x1c104004: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 0.1;
+                     id(BHZ3_Volumenstrom_Zusatzheizung).state = v;
+
+                     break;
+                 }
+                 case 0x1c104005: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 0.1;
+                     id(BHZ3_Druck_Puffer).state = v;
+
+                     break;
+                 }
+                 case 0x1c104006: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 0.1;
+                     id(BHZ3_Volumenstrom_HK1).state = v;
+
+                     break;
+                 }
+                 case 0x1c104007: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 0.1;
+                     id(BHZ3_Volumenstrom_HK2).state = v;
+
+                     break;
+                 }
+                 case 0x1c104009: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 0.1;
+                     id(BHZ3_Temperatur_HK1_VL).state = v;
+
+                     break;
+                 }
+                 case 0x1c10400a: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 0.1;
+                     id(BHZ3_Temperatur_HK2_VL).state = v;
+
+                     break;
+                 }
+                 case 0x1c10400b: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 0.1;
+                     id(BHZ3_Temperatur_Puffer_Oben).state = v;
+
+                     break;
+                 }
+                 case 0x1c10400c: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 0.1;
+                     id(BHZ3_Temperatur_Puffer_Mitte).state = v;
+
+                     break;
+                 }
+                 case 0x1c10400d: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 0.1;
+                     id(BHZ3_Temperatur_Puffer_Unten).state = v;
+
+                     break;
+                 }
+                 case 0x1c104012: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 0.1;
+                     id(BHZ3_Temperatur_WW_Zirkulation).state = v;
+                   if(v > 38.0) {
+                    id(sw_zirkulation).state = false;
+                    id(sw_zirkulation).publish_state(false);
+                   }
+                     break;
+                 }
+                 case 0x1c104013: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 0.1;
+                     id(BHZ3_Temperatur_Wetter).state = v;
+
+                     break;
+                 }
+                 case 0x1c10401b: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 0.1;
+                     id(BHZ3_Temperatur_Zusatzheizung_VL).state = v;
+
+                     break;
+                 }
+                 case 0x1c10401c: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 0.1;
+                     id(BHZ3_Temperatur_Zusatzheizung_RL).state = v;
+
+                     break;
+                 }
+                 case 0x1c10401e: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 0.1;
+                     id(BHZ3_Temperatur_HK1_RL).state = v;
+
+                     break;
+                 }
+                 case 0x1c10401f: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 0.1;
+                     id(BHZ3_Temperatur_HK2_RL).state = v;
+
+                     break;
+                 }
+                 case 0x1c104020: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 0.1;
+                     id(BHZ3_Temperatur_WW_Prim_VL).state = v;
+
+                     break;
+                 }
+                 case 0x1c104021: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 0.1;
+                     id(BHZ3_Temperatur_WW_Prim_RL).state = v;
+
+                     break;
+                 }
+                 case 0x1c104022: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 0.1;
+                     id(BHZ3_Temperatur_WW_Ist).state = v;
+
+                     break;
+                 }
+                 case 0x1c106002: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     
+                     id(BHZ3_Pumpe_WW).state = v;
+
+                     break;
+                 }
+                 case 0x1c106008: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     
+                     id(BHZ3_Status_HK1_Ein_Aus).state = v;
+
+                     break;
+                 }
+                 case 0x1c10600a: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     
+                     id(BHZ3_Status_HK1_Aus_Ein).state = v;
+
+                     break;
+                 }
+                 case 0x1c106013: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     
+                     id(BHZ3_Status_Zusatzheizung_aktiv).state = v;
+
+                     break;
+                 }
+                 case 0x1c10a411: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     
+                     id(BHZ3_Status_Zusatzheizung_Aktiviert_fuer).state = v;
+
+                     break;
+                 }
+                 case 0x1c10a413: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     
+                     id(BHZ3_Status_Zusatzheizung_Ein_Aus).state = v;
+
+                     break;
+                 }
+                 case 0x1c10c019: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     
+                     id(BHZ3_Status_WW_Zirkulationsprogramm).state = v;
+
+                     break;
+                 }
+                 case 0x1c10c037: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 0.1;
+                     id(BHZ3_Temperatur_WW_Soll).state = v;
+
+                     break;
+                 }
+                 case 0x1c112006: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 0.1;
+                     id(BHZ3_Volumenstrom_WW_Speicher).state = v;
+
+                     break;
+                 }
+                 case 0x1c11200e: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     
+                     id(BHZ3_Status_HK1_Absenkart).state = v;
+
+                     break;
+                 }
+                 case 0x1c112013: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 0.1;
+                     id(BHZ3_Status_HK1_Sommerbetrieb).state = v;
+
+                     break;
+                 }
+                 case 0x1c11201e: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     
+                     id(BHZ3_Status_HK1_Dauerbetrieb).state = v;
+
+                     break;
+                 }
+                 case 0x1c11201f: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     
+                     id(BHZ3_Status_HK1_Abwesenheitszeit).state = v;
+
+                     break;
+                 }
+                 case 0x1c112022: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     
+                     id(BHZ3_Status_HK1_Programm).state = v;
+
+                     break;
+                 }
+                 case 0x1c112024: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 0.1;
+                     id(BHZ3_Status_HK1_Waermer_Kaelter).state = v;
+
+                     break;
+                 }
+                 case 0x1c114006: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 100;
+                     id(BHZ3_Leistung_Zusatzheizung).state = v;
+
+                     break;
+                 }
+                 case 0x1c114009: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 0.1;
+                     id(BHZ3_Gesamtleistung_Zusatzheizung_Heute).state = v;
+
+                     break;
+                 }
+                 case 0x1c11400a: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 0.1;
+                     id(BHZ3_Gesamtleistung_Zusatzheizung_Gestern).state = v;
+
+                     break;
+                 }
+                 case 0x1c11400b: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 0.1;
+                     id(BHZ3_Gesamtleistung_Zusatzheizung_5_Tage_ohne_Heute).state = v;
+
+                     break;
+                 }
+                 case 0x1c11400c: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 1;
+                     id(BHZ3_Gesamtleistung_Zusatzheizung_Letzte_4_Wochen_ohne_Heute).state = v;
+
+                     break;
+                 }
+                 case 0x1c114406: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 100;
+                     id(BHZ3_Leistung_HK1).state = v;
+
+                     break;
+                 }
+                 case 0x1c114409: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 0.1;
+                     id(BHZ3_Gesamtleistung_HK1_Heute).state = v;
+
+                     break;
+                 }
+                 case 0x1c11440a: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 0.1;
+                     id(BHZ3_Gesamtleistung_HK1_Gestern).state = v;
+
+                     break;
+                 }
+                 case 0x1c11440b: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 0.1;
+                     id(BHZ3_Gesamtleistung_HK1_5_Tage_ohne_Heute).state = v;
+
+                     break;
+                 }
+                 case 0x1c11440c: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 1;
+                     id(BHZ3_Gesamtleistung_HK1_Letzte_4_Wochen_ohne_Heute).state = v;
+
+                     break;
+                 }
+                 case 0x1c114c06: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 100;
+                     id(BHZ3_Leistung_WW).state = v;
+
+                     break;
+                 }
+                 case 0x1c114c09: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 0.1;
+                     id(BHZ3_Gesamtleistung_WW_Heute).state = v;
+
+                     break;
+                 }
+                 case 0x1c114c0a: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 0.1;
+                     id(BHZ3_Gesamtleistung_WW_Gestern).state = v;
+
+                     break;
+                 }
+                 case 0x1c114c0b: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 0.1;
+                     id(BHZ3_Gesamtleistung_WW_5_Tage_ohne_Heute).state = v;
+
+                     break;
+                 }
+                 case 0x1c114c0c: 
+                 {
+                     union BytesToNumbers
+                     {
+                       uint8_t bytes[2] = {0,0};
+                       short val;
+                      } bytesToNumbers;  
+                     bytesToNumbers.bytes[0] = x[2];
+                     bytesToNumbers.bytes[1] = x[1];
+                     float v = bytesToNumbers.val;
+                     v = v * 1;
+                     id(BHZ3_Gesamtleistung_WW_Letzte_4_Wochen_ohne_Heute).state = v;
+
+                     break;
+                 }
+                default:
+                        // ESP_LOGD("canbus_unhandled_id with non-zero value", "%x", can_id);
+                    break;
+                 }
+               }

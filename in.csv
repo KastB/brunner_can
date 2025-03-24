@@ -1,83 +1,330 @@
-Device;Group;Module;Name;ID;Brunner_Name;Unit;Scale;Alternate_ID;Annotations;Certainty
-DISP;Steuerung;Zusatzheizung;Programm;0x0a10a612;ZH1-18;;;0x0b10a612;0 - 5;
-DISP;Steuerung;WW;Solltemperatur PWT;0x0a10c21d;WW-29;°C;0.1;0x0b10c21d;;
-DISP;Steuerung;HK1;Dauerbetrieb;0x0a11221e;HK1-30;Stunden;;0x0b11221e;;
-DISP;Steuerung;HK1;Waermer Kaelter;0x0a112224;HK1-36;°C;0.1;0x0b112224;;
-DISP;Steuerung;WW;Zirkulationsprogramm;0x1210c219;WW-25;;;0x1310c219;0 - 5;
-DISP;Steuerung;HK1;Sommerbetrieb;0x12112213;HK1-19;°C;0.1;0x13112213;;
-DISP;Steuerung;HK1;Abwesenheitszeit;0x1211221f;HK1-31;Tage;;0x1311221f;;
-DISP;Steuerung;HK1;Programm;0x12112222;HK1-34;;;0x13112222;0 - 5;
-DISP;Steuerung;Festbrennofen;Holzart;0x12b8c20d;;;;0x13b8c20d;0 - 2;
-BHZ3;Volumenstrom;Solar;;0x1c104000;T1;l/min;0.1;;;Unverifiziert
-BHZ3;Volumenstrom;WW;;0x1c104001;T2;l/min;0.1;;;
-BHZ3;Volumenstrom;Festbrennofen;;0x1c104003;T5;l/min;0.1;;;
-BHZ3;Volumenstrom;Zusatzheizung;;0x1c104004;T6;l/min;0.1;;;Unverifiziert
-BHZ3;Druck;Puffer;;0x1c104005;T7;bar;0.1;;;
-BHZ3;Volumenstrom;HK1;;0x1c104006;T8;l/min;0.1;;;
-BHZ3;Temperatur;HK1;VL;0x1c104009;S1;°C;0.1;;;
-BHZ3;Temperatur;HK2;VL;0x1c10400a;S2;°C;0.1;;;
-BHZ3;Temperatur;Puffer;Oben;0x1c10400b;S3;°C;0.1;;;
-BHZ3;Temperatur;Puffer;Mitte;0x1c10400c;S4;°C;0.1;;;
-BHZ3;Temperatur;Puffer;Unten;0x1c10400d;S5;°C;0.1;;;
-BHZ3;Temperatur;Solar;Eintrag Puffer;0x1c10400e;S6;°C;0.1;;;
-BHZ3;Temperatur;Solar;Kollektortemperatur;0x1c10400f;S7;°C;0.1;;;
-BHZ3;Temperatur;Solar;RL;0x1c104010;S8;°C;0.1;;;
-BHZ3;Temperatur;WW;Zirkulation;0x1c104012;S10;°C;0.1;;;
-BHZ3;Temperatur;Wetter;;0x1c104013;S11;°C;0.1;;;
-BHZ3;Temperatur;Festbrennofen;Kesseltemperatur;0x1c104014;S12/ST34;°C;0.1;;;
-BHZ3;Temperatur;Festbrennofen;Kessel RL;0x1c104015;S13;°C;0.1;;;
-BHZ3;Temperatur;Solar;Sek RL;0x1c104016;S14;°C;0.1;;;
-BHZ3;Temperatur;Solar;Prim VL;0x1c104019;S17;°C;0.1;;;
-BHZ3;Temperatur;Zusatzheizung;VL;0x1c10401b;S19;°C;0.1;;;
-BHZ3;Temperatur;Zusatzheizung;RL;0x1c10401c;S20;°C;0.1;;;
-BHZ3;Temperatur;HK1;RL;0x1c10401e;S22;°C;0.1;;;
-BHZ3;Temperatur;HK2;RL;0x1c10401f;S23;°C;0.1;;;
-BHZ3;Temperatur;WW;Prim VL;0x1c104020;S24;°C;0.1;;;
-BHZ3;Temperatur;WW;Prim RL;0x1c104021;S25;°C;0.1;;;
-BHZ3;Temperatur;WW;Ist;0x1c104022;;°C;0.1;;;
-BHZ3;UNKLAHR;WW;;0x1c106002;;;;Werte im Bereich von 30 wenn Badewasser einläuft, sieht geregelt aus.;;
-BHZ3;Status;HK1;Ein Aus;0x1c106008;;;;;Ein=1, Aus=0;
-BHZ3;Status;HK1;Aus Ein;0x1c10600a;;;;;Aus=1, Ein=0;
-BHZ3;Status;Zusatzheizung;aktiv;0x1c106013;;;;0x1c106015;0, 1;
-BHZ3;Leistung;Festbrennofen;;0x1c10801a;;kw;0.1;;;
-BHZ3;Gesamtleistung;Festbrennofen;Heute;0x1c10801d;;kwh;0.1;;;
-BHZ3;Gesamtleistung;Festbrennofen;Gestern;0x1c10801e;;kwh;0.1;;;
-BHZ3;Gesamtleistung;Festbrennofen;5 Tage ohne Heute;0x1c10801f;;kwh;0.1;;;
-BHZ3;Gesamtleistung;Festbrennofen;30 Tage ohne Heute;0x1c108020;;kwh;1;;;
-BHZ3;Status;Zusatzheizung;Aktiviert fuer;0x1c10a411;ZH1-17;;;;0 - 5;
-EOS7;Steuerung;Zusatzheizung;Programm;0x1c10a412;ZH1-18;;;;0 - 5;
-BHZ3;Status;Zusatzheizung;Ein Aus;0x1c10a413;;;;;0, 1;
-BHZ3;Status;WW;Zirkulationsprogramm;0x1c10c019;WW-25;;;;0 - 5;
-BHZ3;Temperatur;WW;Soll;0x1c10c037;;°C;0.1;;;Unverifiziert
-BHZ3;Volumenstrom;WW-Speicher;;0x1c112006;;l/min;0.1;0x1c11200b;;
-BHZ3;Status;HK1;Absenkart;0x1c11200e;HK1-14;;;;0 - 4;
-BHZ3;Status;HK1;Sommerbetrieb;0x1c112013;HK1-19;°C;0.1;;;
-BHZ3;Status;HK1;Dauerbetrieb;0x1c11201e;HK1-30;h;;;Zählt runter;
-BHZ3;Status;HK1;Abwesenheitszeit;0x1c11201f;HK1-31;d;;;Zählt runter;
-BHZ3;Status;HK1;Programm;0x1c112022;HK1-34;;;;0 - 5;
-BHZ3;Status;HK1;Waermer Kaelter;0x1c112024;HK1-36;°C;0.1;;;
-BHZ3;Leistung;Zusatzheizung;;0x1c114006;;kw;0.1;;;
-BHZ3;Gesamtleistung;Zusatzheizung;Heute;0x1c114009;;kwh;0.1;;;
-BHZ3;Gesamtleistung;Zusatzheizung;Gestern;0x1c11400a;;kwh;0.1;;;
-BHZ3;Gesamtleistung;Zusatzheizung;5 Tage ohne Heute;0x1c11400b;;kwh;0.1;;;
-BHZ3;Gesamtleistung;Zusatzheizung;Letzte 4 Wochen ohne Heute;0x1c11400c;;kwh;1;;;
-BHZ3;Leistung;HK1;;0x1c114406;;kw;0.1;;;
-BHZ3;Gesamtleistung;HK1;Heute;0x1c114409;;kwh;0.1;;;
-BHZ3;Gesamtleistung;HK1;Gestern;0x1c11440a;;kwh;0.1;;;
-BHZ3;Gesamtleistung;HK1;5 Tage ohne Heute;0x1c11440b;;kwh;0.1;;;
-BHZ3;Gesamtleistung;HK1;Letzte 4 Wochen ohne Heute;0x1c11440c;;kwh;1;;;
-BHZ3;Leistung;WW;;0x1c114c06;;kw;0.1;;;
-BHZ3;Gesamtleistung;WW;Heute;0x1c114c09;;kwh;0.1;;;
-BHZ3;Gesamtleistung;WW;Gestern;0x1c114c0a;;kwh;0.1;;;
-BHZ3;Gesamtleistung;WW;5 Tage ohne Heute;0x1c114c0b;;kwh;0.1;;;
-BHZ3;Gesamtleistung;WW;Letzte 4 Wochen ohne Heute;0x1c114c0c;;kwh;1;;;
-BHZ3;Leistung;Solar;;0x1c115006;;kw;0.1;;;
-BHZ3;Gesamtleistung;Solar;Heute;0x1c115009;;kwh;0.1;;;
-BHZ3;Gesamtleistung;Solar;Gestern;0x1c11500a;;kwh;0.1;;;
-BHZ3;Gesamtleistung;Solar;5 Tage ohne Heute;0x1c11500b;;kwh;0.1;;;
-BHZ3;Gesamtleistung;Solar;Letzte 4 Wochen ohne Heute;0x1c11500c;;kwh;1;;;
-EOS7;Temperatur;Festbrennofen;Brennraumtemperatur;0x1cb86000;;°C;0.1;;;
-EOS7;Temperatur;Festbrennofen;Kesseltemperatur;0x1cb86001;;°C;0.1;;;
-EOS7;Status;Festbrennofen;Tuer zu;0x1cb86008;;;;;0, 1;
-EOS7;Status;Festbrennofen;Holzart;0x1cb8c00d;;;;;0 - 2;
-EOS7;Status;Festbrennofen;Oekobetrieb aus;0x1cb8c00e;;;;;0, 1;
+Device,Group,Module,Name,ID,Brunner_Name,,Scale,Alternate_ID,Annotations,Certainty,State Class,Device Class,Postcall
+DISP,Steuerung,Zusatzheizung,Programm,0x0a10a612,ZH1-18,,,0x0b10a612,0 - 5,,measurement,,
+DISP,Steuerung,WW,Solltemperatur PWT,0x0a10c21d,WW-29,°C,0.1,0x0b10c21d,,,measurement,TEMPERATURE,
+DISP,Steuerung,HK1,Dauerbetrieb,0x0a11221e,HK1-30,h,,0x0b11221e,,,measurement,DURATION,
+DISP,Steuerung,HK1,Waermer Kaelter,0x0a112224,HK1-36,°C,0.1,0x0b112224,,,measurement,TEMPERATURE,
+DISP,Steuerung,Unknown,Unknown1,0x1210000b,,,,,,,measurement,,
+DISP,Steuerung,Unknown,Unknown2,0x12102000,,,,,,,measurement,,
+DISP,Steuerung,WW,Zirkulationsprogramm,0x1210c219,WW-25,,,0x1310c219,0 - 5,,measurement,,
+DISP,Steuerung,HK1,Sommerbetrieb,0x12112213,HK1-19,°C,0.1,0x13112213,,,measurement,TEMPERATURE,
+DISP,Steuerung,HK1,Abwesenheitszeit,0x1211221f,HK1-31,d,,0x1311221f,,,measurement,DURATION,
+DISP,Steuerung,HK1,Programm,0x12112222,HK1-34,,,0x13112222,0 - 5,,measurement,,
+DISP,Steuerung,Festbrennofen,Holzart,0x12b8c20d,,,,0x13b8c20d,0 - 2,,measurement,,
+BHZ3,Status,Unknown,Unknown3,0x1310000b,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown4,0x1310000c,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown5,0x1c102002,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown6,0x1c10200b,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown7,0x1c10200c,,,,,,,measurement,,
+BHZ3,Volumenstrom,Solar,,0x1c104000,T1,l/min,0.1,,,Unverifiziert,measurement,,
+BHZ3,Volumenstrom,WW,,0x1c104001,T2,l/min,0.1,,,,measurement,,'                   if(v > 1.0) {
+                    id(sw_zirkulation).publish_state(true);
+                   }'
+BHZ3,Status,WW,Taster Zirkulationspumpe,0x1c104002,T3,,,,,,measurement,,
+BHZ3,Volumenstrom,Festbrennofen,,0x1c104003,T5,l/min,0.1,,,,measurement,,
+BHZ3,Volumenstrom,Zusatzheizung,,0x1c104004,T6,l/min,0.1,,,Unverifiziert,measurement,,
+BHZ3,Druck,Puffer,,0x1c104005,T7,bar,0.1,,,,measurement,PRESSURE,
+BHZ3,Volumenstrom,HK1,,0x1c104006,T8,l/min,0.1,,,,measurement,,
+BHZ3,Volumenstrom,HK2,,0x1c104007,T9,l/min,0.1,,,Unverifiziert,measurement,,
+BHZ3,Temperatur,HK1,VL,0x1c104009,S1,°C,0.1,,,,measurement,TEMPERATURE,
+BHZ3,Temperatur,HK2,VL,0x1c10400a,S2,°C,0.1,,,,measurement,TEMPERATURE,
+BHZ3,Temperatur,Puffer,Oben,0x1c10400b,S3,°C,0.1,,,,measurement,TEMPERATURE,
+BHZ3,Temperatur,Puffer,Mitte,0x1c10400c,S4,°C,0.1,,,,measurement,TEMPERATURE,
+BHZ3,Temperatur,Puffer,Unten,0x1c10400d,S5,°C,0.1,,,,measurement,TEMPERATURE,
+BHZ3,Temperatur,Solar,Eintrag Puffer,0x1c10400e,S6,°C,0.1,,,,measurement,TEMPERATURE,
+BHZ3,Temperatur,Solar,Kollektortemperatur,0x1c10400f,S7,°C,0.1,,,,measurement,TEMPERATURE,
+BHZ3,Temperatur,Solar,RL,0x1c104010,S8,°C,0.1,,,,measurement,TEMPERATURE,
+BHZ3,Temperatur,WW,Speicher,0x1c104011,S9,°C,0.1,,,,measurement,TEMPERATURE,
+BHZ3,Temperatur,WW,Zirkulation,0x1c104012,S10,°C,0.1,,,,measurement,TEMPERATURE,'                   if(v > 38.0) {
+                    id(sw_zirkulation).publish_state(false);
+                   }'
+BHZ3,Temperatur,Wetter,,0x1c104013,S11,°C,0.1,,,,measurement,TEMPERATURE,
+BHZ3,Temperatur,Festbrennofen,Kesseltemperatur,0x1c104014,S12/ST34,°C,0.1,,,,measurement,TEMPERATURE,
+BHZ3,Temperatur,Festbrennofen,Kessel RL,0x1c104015,S13,°C,0.1,,,,measurement,TEMPERATURE,
+BHZ3,Temperatur,Solar,Sek RL,0x1c104016,S14,°C,0.1,,,,measurement,TEMPERATURE,
+BHZ3,Temperatur,Wärmeerzeuger 1,Temperatur,0x1c104017,S15,°C,0.1,,,,measurement,TEMPERATURE,
+BHZ3,Temperatur,Solar,Kollektor außen,0x1c104018,S16,°C,0.1,,,,measurement,TEMPERATURE,
+BHZ3,Temperatur,Solar,Prim VL,0x1c104019,S17,°C,0.1,,,,measurement,TEMPERATURE,
+BHZ3,Temperatur,WW,Speicher Zirkulation,0x1c10401a,S18,°C,0.1,,,,measurement,TEMPERATURE,
+BHZ3,Temperatur,Zusatzheizung,VL,0x1c10401b,S19,°C,0.1,,,,measurement,TEMPERATURE,
+BHZ3,Temperatur,Zusatzheizung,RL,0x1c10401c,S20,°C,0.1,,,,measurement,TEMPERATURE,
+BHZ3,Temperatur,Reserve,S21,0x1c10401d,S21,°C,0.1,,,,measurement,,
+BHZ3,Temperatur,HK1,RL,0x1c10401e,S22,°C,0.1,,,,measurement,TEMPERATURE,
+BHZ3,Temperatur,HK2,RL,0x1c10401f,S23,°C,0.1,,,,measurement,TEMPERATURE,
+BHZ3,Temperatur,WW,Prim VL,0x1c104020,S24,°C,0.1,,,,measurement,TEMPERATURE,
+BHZ3,Temperatur,WW,Prim RL,0x1c104021,S25,°C,0.1,,,,measurement,TEMPERATURE,
+BHZ3,Temperatur,WW,Ist,0x1c104022,S26,°C,0.1,,,,measurement,TEMPERATURE,
+BHZ3,Temperatur,Unknown,Unknown14,0x1c104024,,°C,0.1,,,,measurement,,
+BHZ3,Temperatur,Unknown,Unknown15,0x1c104025,,°C,0.1,,,,measurement,,
+BHZ3,Temperatur,Unknown,Unknown16,0x1c104028,,°C,0.1,,,,measurement,,
+BHZ3,Temperatur,Unknown,Unknown17,0x1c104029,,°C,0.1,,,,measurement,,
+BHZ3,Temperatur,Unknown,Unknown18,0x1c10402a,,°C,0.1,,,,measurement,,
+BHZ3,Temperatur,Unknown,Unknown19,0x1c10402d,,°C,0.1,,,,measurement,,
+BHZ3,Temperatur,Unknown,Unknown20,0x1c10402e,,°C,0.1,,,,measurement,,
+BHZ3,Temperatur,Unknown,Unknown21,0x1c104066,,°C,0.1,,,,measurement,,
+BHZ3,Pumpe,WW,,0x1c106002,A03 P.WW ?,,,,Vermutlich Ladepumpe: Werte im Bereich von 30 wenn Badewasser einläuft  sieht geregelt aus.,,measurement,,
+BHZ3,Status,Unknown,Unknown22,0x1c106006,A07 P. Zirkulation,,,,,,measurement,,
+BHZ3,Status,HK1,Ein Aus,0x1c106008,A09 P. HK 1,,,,Ein=1,Aus=0,measurement,,
+BHZ3,Status,HK1,Aus Ein,0x1c10600a,A10/11 M. HK 1,,,,Aus=1,Ein=0,measurement,,
+BHZ3,Status,Zusatzheizung,aktiv,0x1c106013,A20 Potenzial frei WE 1,,,0x1c106015,0,1,measurement,,
+BHZ3,Status,Unknown,Unknown23,0x1c10601d,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown24,0x1c10601e,,,,,,,measurement,,
+BHZ3,Status,Unknown0,Unknown25,0x1c106021,,,,,,,measurement,,
+BHZ3,Status,Unknown0,Unknown26,0x1c106022,,,,,,,measurement,,
+BHZ3,Status,Unknown0,Unknown27,0x1c106023,,,,,,,measurement,,
+BHZ3,Status,Unknown0,Unknown28,0x1c106024,,,,,,,measurement,,
+BHZ3,Status,Unknown0,Unknown29,0x1c106025,,,,,,,measurement,,
+BHZ3,Status,Unknown0,Unknown30,0x1c106026,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown31,0x1c108010,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown32,0x1c108011,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown33,0x1c108012,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown34,0x1c108018,,,,,,,measurement,,
+BHZ3,Status,Festbrennofen,Unknown35,0x1c108019,,,,,,,measurement,,
+BHZ3,Leistung,Festbrennofen,,0x1c10801a,,W,100,,,,measurement,POWER,
+BHZ3,Gesamtleistung,Festbrennofen,Heute,0x1c10801d,,kWh,0.1,,,,total_increasing,ENERGY,
+BHZ3,Gesamtleistung,Festbrennofen,Gestern,0x1c10801e,,kWh,0.1,,,,total_increasing,ENERGY,
+BHZ3,Gesamtleistung,Festbrennofen,5 Tage ohne Heute,0x1c10801f,,kWh,0.1,,,,total_increasing,ENERGY,
+BHZ3,Gesamtleistung,Festbrennofen,30 Tage ohne Heute,0x1c108020,,kWh,1,,,,total_increasing,ENERGY,
+BHZ3,Status,Unknown1,Unknown36,0x1c108029,,,,,,,measurement,,
+BHZ3,Status,Unknown1,Unknown37,0x1c10802a,,,,,,,measurement,,
+BHZ3,Status,Unknown1,Unknown38,0x1c10802b,,,,,,,measurement,,
+BHZ3,Status,Unknown1,Unknown39,0x1c10802c,,,,,,,measurement,,
+BHZ3,Status,Unknown1,Unknown40,0x1c10802d,,,,,,,measurement,,
+BHZ3,Status,Unknown1,Unknown41,0x1c10802e,,,,,,,measurement,,
+BHZ3,Status,Unknown2,Unknown42,0x1c10803a,,,,,,,measurement,,
+BHZ3,Status,Unknown2,Unknown43,0x1c10803b,,,,,,,measurement,,
+BHZ3,Status,Unknown2,Unknown44,0x1c10803c,,,,,,,measurement,,
+BHZ3,Status,Unknown2,Unknown45,0x1c10803d,,,,,,,measurement,,
+BHZ3,Status,Unknown2,Unknown46,0x1c10803e,,,,,,,measurement,,
+BHZ3,Status,Unknown2,Unknown47,0x1c10803f,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown48,0x1c10a00e,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown49,0x1c10a014,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown50,0x1c10a01c,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown51,0x1c10a022,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown52,0x1c10a024,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown53,0x1c10a025,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown54,0x1c10a026,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown55,0x1c10a029,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown56,0x1c10a400,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown57,0x1c10a402,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown58,0x1c10a40e,,,,,,,measurement,,
+BHZ3,Status,Zusatzheizung,Aktiviert fuer,0x1c10a411,ZH1-17,,,,0 - 5,,measurement,,
+EOS7,Steuerung,Zusatzheizung,Programm,0x1c10a412,ZH1-18,,,,0 - 5,,measurement,,
+BHZ3,Status,Zusatzheizung,Ein Aus,0x1c10a413,,,,,0,1,measurement,,
+BHZ3,Status,Unknown,Unknown59,0x1c10a416,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown60,0x1c10a41c,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown61,0x1c10a422,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown62,0x1c10a424,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown63,0x1c10a425,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown64,0x1c10a426,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown65,0x1c10a429,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown66,0x1c10a800,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown67,0x1c10a802,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown68,0x1c10a80e,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown69,0x1c10a811,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown70,0x1c10a816,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown71,0x1c10a81c,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown72,0x1c10a822,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown73,0x1c10a824,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown74,0x1c10a825,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown75,0x1c10a826,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown76,0x1c10a829,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown77,0x1c10c000,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown78,0x1c10c004,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown79,0x1c10c006,,,,,,,measurement,,
+BHZ3,Status,WW,Zirkulationsprogramm,0x1c10c019,WW-25,,,,0 - 5,,measurement,,
+BHZ3,Status,Unknown3,Unknown80,0x1c10c01d,,,,,,,measurement,,
+BHZ3,Status,Unknown3,Unknown81,0x1c10c01e,,,,,,,measurement,,
+BHZ3,Status,Unknown3,Unknown82,0x1c10c01f,,,,,,,measurement,,
+BHZ3,Status,Unknown3,Unknown83,0x1c10c020,,,,,,,measurement,,
+BHZ3,Status,Unknown3,Unknown84,0x1c10c021,,,,,,,measurement,,
+BHZ3,Status,Unknown3,Unknown85,0x1c10c022,,,,,,,measurement,,
+BHZ3,Status,Unknown3,Unknown86,0x1c10c023,,,,,,,measurement,,
+BHZ3,Status,Unknown3,Unknown87,0x1c10c024,,,,,,,measurement,,
+BHZ3,Status,Unknown3,Unknown88,0x1c10c025,,,,,,,measurement,,
+BHZ3,Status,Unknown3,Unknown89,0x1c10c026,,,,,,,measurement,,
+BHZ3,Status,Unknown3,Unknown90,0x1c10c027,,,,,,,measurement,,
+BHZ3,Status,Unknown3,Unknown91,0x1c10c028,,,,,,,measurement,,
+BHZ3,Status,Unknown3,Unknown92,0x1c10c029,,,,,,,measurement,,
+BHZ3,Status,Unknown3,Unknown93,0x1c10c02a,,,,,,,measurement,,
+BHZ3,Status,Unknown3,Unknown94,0x1c10c02b,,,,,,,measurement,,
+BHZ3,Status,Unknown3,Unknown95,0x1c10c02c,,,,,,,measurement,,
+BHZ3,Status,Unknown3,Unknown96,0x1c10c02e,,,,,,,measurement,,
+BHZ3,Status,Unknown3,Unknown97,0x1c10c030,,,,,,,measurement,,
+BHZ3,Status,Unknown3,Unknown98,0x1c10c031,,,,,,,measurement,,
+BHZ3,Temperatur,WW,Soll,0x1c10c037,,°C,0.1,,,Unverifiziert,measurement,TEMPERATURE,
+BHZ3,Status,Unknown,Unknown99,0x1c10c039,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown100,0x1c10e000,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown101,0x1c110025,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown102,0x1c110026,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown103,0x1c110027,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown104,0x1c110028,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown105,0x1c110029,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown106,0x1c11002a,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown107,0x1c110031,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown108,0x1c110032,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown109,0x1c110034,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown110,0x1c110051,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown111,0x1c112000,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown112,0x1c112004,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown113,0x1c112005,,,,,,,measurement,,
+BHZ3,Volumenstrom,WW-Speicher,,0x1c112006,,l/min,0.1,0x1c11200b,,,measurement,,
+BHZ3,Status,Unknown,Unknown114,0x1c112007,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown115,0x1c112008,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown116,0x1c11200b,,,,,,,measurement,,
+BHZ3,Status,HK1,Absenkart,0x1c11200e,HK1-14,,,,0 - 4,,measurement,,
+BHZ3,Status,HK1,Sommerbetrieb,0x1c112013,HK1-19,°C,0.1,,,,measurement,TEMPERATURE,
+BHZ3,Status,Unknown,Unknown117,0x1c112015,,,,,,,measurement,,
+BHZ3,Status,HK1,Dauerbetrieb,0x1c11201e,HK1-30,h,,,Zählt runter,,measurement,DURATION,
+BHZ3,Status,HK1,Abwesenheitszeit,0x1c11201f,HK1-31,d,,,Zählt runter,,measurement,DURATION,
+BHZ3,Status,HK1,Programm,0x1c112022,HK1-34,,,,0 - 5,,measurement,,
+BHZ3,Status,HK1,Waermer Kaelter,0x1c112024,HK1-36,°C,0.1,,,,measurement,TEMPERATURE,
+BHZ3,Status,Unknown,Unknown118,0x1c112026,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown119,0x1c112027,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown120,0x1c112029,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown121,0x1c11202b,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown122,0x1c11202c,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown123,0x1c11202d,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown124,0x1c11202f,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown125,0x1c11203a,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown126,0x1c112400,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown127,0x1c112404,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown128,0x1c112405,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown129,0x1c112406,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown130,0x1c112407,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown131,0x1c112408,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown132,0x1c11240b,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown133,0x1c11240e,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown134,0x1c112413,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown135,0x1c112415,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown136,0x1c112422,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown137,0x1c112423,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown138,0x1c112424,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown139,0x1c112426,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown140,0x1c112427,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown141,0x1c112429,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown142,0x1c11242b,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown143,0x1c11242c,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown144,0x1c11242d,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown145,0x1c11242f,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown146,0x1c11243a,,,,,,,measurement,,
+BHZ3,Status,Zusatzheizung,Unknown147,0x1c114000,,,,,,,measurement,,
+BHZ3,Status,Zusatzheizung,Unknown148,0x1c114004,,,,,,,measurement,,
+BHZ3,Status,Zusatzheizung,Unknown149,0x1c114005,,,,,,,measurement,,
+BHZ3,Leistung,Zusatzheizung,,0x1c114006,,W,100,,,,measurement,POWER,
+BHZ3,Status,Zusatzheizung,Unknown150,0x1c114007,,,,,,,measurement,,
+BHZ3,Gesamtleistung,Zusatzheizung,Heute,0x1c114009,,kWh,0.1,,,,total_increasing,ENERGY,
+BHZ3,Gesamtleistung,Zusatzheizung,Gestern,0x1c11400a,,kWh,0.1,,,,total_increasing,ENERGY,
+BHZ3,Gesamtleistung,Zusatzheizung,5 Tage ohne Heute,0x1c11400b,,kWh,0.1,,,,total_increasing,ENERGY,
+BHZ3,Gesamtleistung,Zusatzheizung,Letzte 4 Wochen ohne Heute,0x1c11400c,,kWh,1,,,,total_increasing,ENERGY,
+BHZ3,Status,Zusatzheizung,6 Monate?,0x1c11400d,,,,,,,measurement,,
+BHZ3,Status,Zusatzheizung,Unknown152,0x1c11400e,,,,,,,measurement,,
+BHZ3,Status,Zusatzheizung,- 1a,0x1c114015,,,,,,,measurement,,
+BHZ3,Status,Zusatzheizung,-2a,0x1c114016,,,,,,,measurement,,
+BHZ3,Status,Zusatzheizung,-3a,0x1c114017,,,,,,,measurement,,
+BHZ3,Status,Zusatzheizung,Unknown156,0x1c114018,,,,,,,measurement,,
+BHZ3,Status,Zusatzheizung,Unknown157,0x1c114019,,,,,,,measurement,,
+BHZ3,Status,Zusatzheizung,Unknown158,0x1c11401a,,,,,,,measurement,,
+BHZ3,Status,Zusatzheizung,Unknown159,0x1c114030,,,,,,,measurement,,
+BHZ3,Status,Zusatzheizung,Unknown160,0x1c114031,,,,,,,measurement,,
+BHZ3,Status,Zusatzheizung,Unknown161,0x1c114032,,,,,,,measurement,,
+BHZ3,Status,HK1,Unknown162,0x1c114400,,,,,,,measurement,,
+BHZ3,Status,HK1,Unknown163,0x1c114404,,,,,,,measurement,,
+BHZ3,Status,HK1,Unknown164,0x1c114405,,,,,,,measurement,,
+BHZ3,Leistung,HK1,,0x1c114406,,W,100,,,,measurement,POWER,
+BHZ3,Status,HK1,Unknown165,0x1c114407,,,,,,,measurement,,
+BHZ3,Gesamtleistung,HK1,Heute,0x1c114409,,kWh,0.1,,,,total_increasing,ENERGY,
+BHZ3,Gesamtleistung,HK1,Gestern,0x1c11440a,,kWh,0.1,,,,total_increasing,ENERGY,
+BHZ3,Gesamtleistung,HK1,5 Tage ohne Heute,0x1c11440b,,kWh,0.1,,,,total_increasing,ENERGY,
+BHZ3,Gesamtleistung,HK1,Letzte 4 Wochen ohne Heute,0x1c11440c,,kWh,1,,,,total_increasing,ENERGY,
+BHZ3,Status,HK1,Unknown166,0x1c11440d,,,,,,,measurement,,
+BHZ3,Status,HK1,Unknown167,0x1c11440e,,,,,,,measurement,,
+BHZ3,Status,HK1,Unknown168,0x1c114415,,,,,,,measurement,,
+BHZ3,Status,HK1,Unknown169,0x1c114416,,,,,,,measurement,,
+BHZ3,Status,HK1,Unknown170,0x1c114417,,,,,,,measurement,,
+BHZ3,Status,HK1,Unknown171,0x1c114418,,,,,,,measurement,,
+BHZ3,Status,HK1,Unknown172,0x1c114419,,,,,,,measurement,,
+BHZ3,Status,HK1,Unknown173,0x1c11441a,,,,,,,measurement,,
+BHZ3,Status,HK1,Unknown174,0x1c114430,,,,,,,measurement,,
+BHZ3,Status,HK1,Unknown175,0x1c114431,,,,,,,measurement,,
+BHZ3,Status,HK1,Unknown176,0x1c114432,,,,,,,measurement,,
+BHZ3,Status,HK2,Unknown177,0x1c114800,,,,,,,measurement,,
+BHZ3,Status,HK2,Unknown178,0x1c114804,,,,,,,measurement,,
+BHZ3,Status,HK2,Unknown179,0x1c114805,,,,,,,measurement,,
+BHZ3,Status,HK2,Unknown180,0x1c114815,,,,,,,measurement,,
+BHZ3,Status,HK2,Unknown181,0x1c114816,,,,,,,measurement,,
+BHZ3,Status,HK2,Unknown182,0x1c114817,,,,,,,measurement,,
+BHZ3,Status,HK2,Unknown183,0x1c114818,,,,,,,measurement,,
+BHZ3,Status,HK2,Unknown184,0x1c114819,,,,,,,measurement,,
+BHZ3,Status,HK2,Unknown185,0x1c11481a,,,,,,,measurement,,
+BHZ3,Status,HK2,Unknown186,0x1c114830,,,,,,,measurement,,
+BHZ3,Status,HK2,Unknown187,0x1c114831,,,,,,,measurement,,
+BHZ3,Status,HK2,Unknown188,0x1c114832,,,,,,,measurement,,
+BHZ3,Status,WW,Unknown189,0x1c114c00,,,,,,,measurement,,
+BHZ3,Status,WW,Unknown190,0x1c114c04,,,,,,,measurement,,
+BHZ3,Status,WW,Unknown191,0x1c114c05,,,,,,,measurement,,
+BHZ3,Leistung,WW,,0x1c114c06,,W,100,,,,measurement,POWER,
+BHZ3,Status,WW,Unknown192,0x1c114c07,,,,,,,measurement,,
+BHZ3,Gesamtleistung,WW,Heute,0x1c114c09,,kWh,0.1,,,,total_increasing,ENERGY,
+BHZ3,Gesamtleistung,WW,Gestern,0x1c114c0a,,kWh,0.1,,,,total_increasing,ENERGY,
+BHZ3,Gesamtleistung,WW,5 Tage ohne Heute,0x1c114c0b,,kWh,0.1,,,,total_increasing,ENERGY,
+BHZ3,Gesamtleistung,WW,Letzte 4 Wochen ohne Heute,0x1c114c0c,,kWh,1,,,,total_increasing,ENERGY,
+BHZ3,Status,WW,Unknown193,0x1c114c0d,,,,,,,measurement,,
+BHZ3,Status,WW,Unknown194,0x1c114c0e,,,,,,,measurement,,
+BHZ3,Status,WW,Unknown195,0x1c114c10,,,,,,,measurement,,
+BHZ3,Status,WW,Unknown196,0x1c114c11,,,,,,,measurement,,
+BHZ3,Status,WW,Unknown197,0x1c114c12,,,,,,,measurement,,
+BHZ3,Status,WW,Unknown198,0x1c114c13,,,,,,,measurement,,
+BHZ3,Status,WW,Unknown199,0x1c114c14,,,,,,,measurement,,
+BHZ3,Status,WW,Unknown200,0x1c114c15,,,,,,,measurement,,
+BHZ3,Status,WW,Unknown201,0x1c114c16,,,,,,,measurement,,
+BHZ3,Status,WW,Unknown202,0x1c114c17,,,,,,,measurement,,
+BHZ3,Status,WW,Unknown203,0x1c114c18,,,,,,,measurement,,
+BHZ3,Status,WW,Unknown204,0x1c114c19,,,,,,,measurement,,
+BHZ3,Status,WW,Unknown205,0x1c114c1a,,,,,,,measurement,,
+BHZ3,Status,WW,Unknown206,0x1c114c30,,,,,,,measurement,,
+BHZ3,Status,WW,Unknown207,0x1c114c31,,,,,,,measurement,,
+BHZ3,Status,WW,Unknown208,0x1c114c32,,,,,,,measurement,,
+BHZ3,Status,Solar,Unknown209,0x1c115004,,,,,,,measurement,,
+BHZ3,Leistung,Solar,,0x1c115006,,W,100,,,,measurement,POWER,
+BHZ3,Gesamtleistung,Solar,Heute,0x1c115009,,kWh,0.1,,,,total_increasing,ENERGY,
+BHZ3,Gesamtleistung,Solar,Gestern,0x1c11500a,,kWh,0.1,,,,total_increasing,ENERGY,
+BHZ3,Gesamtleistung,Solar,5 Tage ohne Heute,0x1c11500b,,kWh,0.1,,,,total_increasing,ENERGY,
+BHZ3,Gesamtleistung,Solar,Letzte 4 Wochen ohne Heute,0x1c11500c,,kWh,1,,,,total_increasing,ENERGY,
+BHZ3,Status,Solar,Unknown210,0x1c115016,,,,,,,measurement,,
+BHZ3,Status,Solar,Unknown211,0x1c115030,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown212,0x1c116015,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown213,0x1c116016,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown214,0x1c116017,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown215,0x1c116018,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown216,0x1c116019,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown217,0x1c11601a,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown218,0x1c11601c,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown219,0x1c11601e,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown220,0x1c116022,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown221,0x1c116023,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown222,0x1c116030,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown223,0x1c116031,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown224,0x1c116042,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown225,0x1c116043,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown226,0x1c11604b,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown227,0x1c11604c,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown228,0x1c11800e,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown229,0x1c11a015,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown230,0x1c11c000,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown231,0x1c11e007,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown232,0x1c11e008,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown233,0x1c11e009,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown234,0x1c11e00a,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown235,0x1c11e00b,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown236,0x1c11e00c,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown237,0x1c11e00f,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown238,0x1c11e013,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown239,0x1c11e014,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown240,0x1c11e015,,,,,,,measurement,,
+EOS7,Temperatur,Festbrennofen,Brennraumtemperatur,0x1cb86000,,°C,0.1,,,,measurement,TEMPERATURE,
+EOS7,Temperatur,Festbrennofen,Kesseltemperatur,0x1cb86001,,°C,0.1,,,,measurement,TEMPERATURE,
+EOS7,Status,Festbrennofen,Tuer zu,0x1cb86008,,,,,0,1,measurement,,
+EOS7,Status,Festbrennofen,Holzart,0x1cb8c00d,,,,,0 - 2,,measurement,,
+EOS7,Status,Festbrennofen,Oekobetrieb aus,0x1cb8c00e,,,,,0,1,measurement,,
+BHZ3,Status,Unknown,Unknown241,0x4100007,,,,,,,measurement,,
+BHZ3,Status,Unknown,Unknown242,0xa102000,,,,,,,measurement,,
